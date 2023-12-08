@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ctf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;700&family=Inter:wght@300;400;500&family=Lato:wght@400;700&family=Roboto&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a href="#" class="logo">
+                <img src="assets/images/logo.svg" id="logo" alt="logo">
+            </a>
+
+            <nav class="menu">
+                <!--ul.menu__list>li.menu__item*2>a.menu__link[href=#]-->
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#" class="menu__link">For Educators</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">For Companies</a></li>
+                </ul>
+            </nav>
+
+            <div class="user-actions">
+                <button class="custom-btn btn-1">SIGN IN</button>
+                <button class="custom-btn btn-2">REGISTER</button>
+            </div>
+
+            <div id="menu__btn">
+                <div id="menu__btn__icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <section class="burger-menu">
+        <div class="menu__list__mobile">
+            <ul class="menu__list__table">
+                <li class="menu__item__mobile"><a href="#" class="menu__link">For Educators</a></li>
+                <li class="menu__item__mobile"><a href="#" class="menu__link">For Companies</a></li>
+
+                <li class="mobile-actions">
+                    <button class="mobile-actions__item custom-btn btn-1">SIGN IN</button>
+                    <button class="mobile-actions__item custom-btn btn-2">REGISTER</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+</header>
+
+<main class="main">
+
+
+    <section class="top">
+
+        <div class="container">
+            <div class="top__inner">
+
+                <h1 class="top__title"><span class="top__title_beginning">Achieve mastery</span><br>
+                    through challenge</h1>
+                <p class="top__text">Improve your development skills by training with your peers on code kata that
+                    continuously <br>
+                    challenge and push your coding practice.</p>
+                <button class="custom-btn btn-3">REGISTER</button>
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="middle">
+        <div class="container">
+            <div class="panels">
+                <div class="panel__one">
+                    <div class="panel__item">
+                        <div class="panel__icon__back">
+                            <img src="/assets/images/icons/curly.svg" alt="curly">
+                        </div>
+                        <p class="panel__one__title">Sharpen your coding skills</p>
+                        <p class="panel__one__text">Challenge yourself on small coding exercises called
+                            "kata". Each kata is crafted by the community to help you
+                            strengthen different coding techniques. Master your
+                            current language of choice, or quickly pick up any of the
+                            55+ programming languages supported.</p>
+
+                        <button class="custom-btn-1 btn-1" id="btn_the_dojo">Join the Dojo</button>
+
+                    </div>
+                    <img src="/assets/images/first__panel.png" alt="first__panel__photo" id="first__panel__photo">
+                </div>
+
+                <div class="panel__two">
+                    <div class="panel__two__item">
+                        <div class="panel__icon__back">
+                            <img src="assets/images/icons/like.svg" alt="like">
+                        </div>
+                        <p class="panel__two__title">Get instant feedback</p>
+                        <p class="panel__two__text">Solve kata with your coding style right in
+                            the browser and use test cases (TDD) to
+                            check it as you progress. Retrain with
+                            new, creative, and optimized approaches.
+                            Find all the bugs in your programming
+                            practice.</p>
+                    </div>
+
+                    <img src="/assets/images/second__panel.png" alt="second__panel__photo"
+                         id="second__panel__photo">
+                </div>
+
+                <div class="panel__tree">
+                    <div class="panel__tree__item">
+                        <div class="panel__icon__back">
+                            <img src="/assets/images/icons/reward.svg" alt="reward">
+                        </div>
+
+                        <p class="panel__tree__title">Earn ranks and honor</p>
+                        <p class="panel__tree__text">Kata code challenges are ranked from beginner to expert level.
+                            As you
+                            complete higher-ranked kata, you level up your profile and push your
+                            software development skills to your highest potential.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
