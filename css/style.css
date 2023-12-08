@@ -144,13 +144,6 @@ header {
 
 
 }
-.btn-clear__style{
-    display: none;
-    padding: 0;
-    border: none;
-    background-color: #1A2332;
-
-}
 
 
 .panel__icon__back {
@@ -553,6 +546,11 @@ header {
 
 
 @media (max-width: 1308px) {
+    .body {
+        padding: calc(10px + (50 - 20) * ((100vw - 320px) / (1200 - 320)));
+        font-size: calc(30px + (30 - 20) * ((100vw - 320px) / (1200 - 320)));
+        margin-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1200 - 320)));
+    }
     #first__panel__photo {
         width: 576px;
         height: 270px;
@@ -589,6 +587,21 @@ header {
         text-align: center;
         margin: 0 auto;
     }
+
+    .header__inner{
+        min-height: 60px;
+    }
+
+    #logo{
+        height: 50px;
+        width: 50px;
+    }
+
+    #menu__btn__icon{
+        height: 50px;
+        width: 50px;
+    }
+
     .menu__list__mobile.show__menu{
         display: block;
     }
