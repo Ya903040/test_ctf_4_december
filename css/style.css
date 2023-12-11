@@ -141,7 +141,7 @@ header {
     backdrop-filter: blur(10px);
 }
 
-#menu__btn__menu__icon{
+#menu__btn__menu__icon {
     width: 60px;
     height: 60px;
     background-color: #1A2332;
@@ -467,8 +467,7 @@ header {
 }
 
 
-
-#menu__btn__icon{
+#menu__btn__icon {
     display: none;
     width: 60px;
     height: 45px;
@@ -504,16 +503,11 @@ header {
 }
 
 
-
-
-
-
-
 #menu__btn__icon span:nth-child(1) {
     top: 0;
 }
 
-#menu__btn__icon span:nth-child(2),#menu__btn__icon span:nth-child(3) {
+#menu__btn__icon span:nth-child(2), #menu__btn__icon span:nth-child(3) {
     top: 18px;
 }
 
@@ -547,24 +541,123 @@ header {
     left: 50%;
 }
 
-#logo__footer{
+#logo__footer {
     width: 60px;
     height: 60px;
 }
 
-.footer{
+.footer {
     color: #FFFFFF;
 }
 
-.footer__bottom{
+
+.container-footer {
+    width: 100%;
+    max-width: 1840px;
+    margin: 0 auto;
+    padding: 7.91% 7.91% 0 7.91%;
+    display: grid;
 
 }
+
+.test-container {
+
+
+}
+
+.footer__top-components-title {
+    color: #FFF;
+    font-family: Inter, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.footer__top-components-list {
+    color: #A4B1CD;
+    font-family: IBM Plex Sans, serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 21px; /* 150% */
+}
+
+.footer__top__languages-icons-table {
+    max-width: 70%;
+    padding: 0;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    display: flex;
+}
+
+.footer__bottom, .footer__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__bottom__legal-link-table{
+    padding: 0;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+    grid-template-rows: auto;
+    grid-template-columns: max-content;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    align-items: start;
+    justify-items: start;
+    display: grid;
+
+}
+
+.footer__bottom____item-legal-link{
+    color: #A2A2A4;
+    font-family: IBM Plex Sans, serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 21px;
+
+}
+
+.footer__text{
+    margin: 0;
+}
+
+.footer__social-table{
+    padding: 0;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+    grid-template-rows: auto;
+    grid-template-columns: max-content;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    align-items: start;
+    justify-items: start;
+    display: grid;
+
+}
+
+.footer__line-between{
+    background: rgba(255, 255, 255, 0.10);    width: 100%;
+    height: 1px;
+    margin: 3rem 0 3rem 0
+}
+
+
+
+
 @media (max-width: 1308px) {
     .body {
         padding: calc(10px + (50 - 20) * ((100vw - 320px) / (1200 - 320)));
         font-size: calc(30px + (30 - 20) * ((100vw - 320px) / (1200 - 320)));
         margin-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1200 - 320)));
     }
+
     #first__panel__photo {
         width: 576px;
         height: 270px;
@@ -590,6 +683,36 @@ header {
 
 }
 
+@media (max-width: 1024px){
+
+    .footer__top{
+        display: block;
+        margin-top: 1.5rem;
+
+    }
+
+    .footer__top ul {
+        padding: 0;
+    }
+
+    .footer__bottom{
+        display: block;
+    }
+    .footer__bottom__legal-link-table{
+        display: block;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+
+    }
+
+
+
+    .footer__bottom____item-legal-link, .footer__text{
+        margin-top: 16px;
+
+    }
+}
 
 @media (max-width: 800px) {
     .menu__list__mobile {
@@ -602,21 +725,21 @@ header {
         margin: 0 auto;
     }
 
-    .header__inner{
+    .header__inner {
         min-height: 60px;
     }
 
-    #logo{
+    #logo {
         height: 50px;
         width: 50px;
     }
 
-    #menu__btn__icon{
+    #menu__btn__icon {
         height: 50px;
         width: 50px;
     }
 
-    .menu__list__mobile.show__menu{
+    .menu__list__mobile.show__menu {
         display: block;
     }
 
@@ -639,31 +762,30 @@ header {
     }
 
 
-
-    .menu__item__mobile{
+    .menu__item__mobile {
         text-align: left;
     }
 
-    .menu__list__table{
+    .menu__list__table {
         padding: 0;
         max-width: 300px;
         margin: 50px auto 0;
         text-align: left;
     }
 
-    .menu__item__mobile{
+    .menu__item__mobile {
         margin: 10px;
         color: white;
         font-size: 1rem;
         font-weight: 400;
     }
 
-    .header__inner{
+    .header__inner {
         display: flex;
         justify-content: space-between;
     }
 
-    #menu__btn__icon{
+    #menu__btn__icon {
         display: block;
     }
 
